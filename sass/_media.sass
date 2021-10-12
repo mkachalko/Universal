@@ -4,20 +4,64 @@
   .request
     width: 160px
 @media ( max-width: 991.98px )
+  body
+    margin-top: 46px
   .container
     width: 740px
   .header
-    &__logo
-      width: 140px
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
+      &_visible
+        bottom: 0
+
   .nav-menu
+    width: 100%
+    &_mobile
+      &_hidden
+        display: none
+      &_visible
+        width: 100%
+        display: flex
+        order: 2
     &__list
-      min-width: 415px
-      font-size: 13px
+      min-width: 200px
+      &_mobile
+        &_visible
+          flex-direction: column
+          align-items: center
+          width: 100%
+    &__item
+      margin-bottom: 10px
   .request
-    width: 140px
-    font-size: 12px
-    line-height: 18px
-    min-height: 38px
+    &_mobile
+      &_hidden
+        display: none
+      &_visible
+        display: flex
+        order: 3
+        width: 100%
+        justify-content: center
+    &__button
+      width: 261px
+  .menu
+    &-button
+      height: 12px
+      width: 16px
+      cursor: pointer
+      &_mobile
+        &_visible
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+      &__line
+        width: 100%
+        height: 1px
+        background-color: $light
   .recommend
     &-content
       &__item
@@ -41,59 +85,10 @@
     &__decryption
       align-self: flex-start
 @media ( max-width: 767.98px )
-  body
-    margin-top: 46px
+
   .container
     width: 87%
-  .header
-    &_mobile
-      &_fixed
-        position: fixed
-        top: 0
-        right: 0
-        left: 0
-        z-index: 99
-      &_visible
-        bottom: 0
 
-  .nav-menu
-    width: 100%
-    &_mobile
-      &_hidden
-        display: none
-      &_visible
-        width: 100%
-        display: flex
-        order: 2
-    &__list
-      &_mobile
-        &_visible
-          flex-direction: column
-          align-items: center
-          width: 100%
-    &__item
-      margin-bottom: 10px
-  .request
-    &_mobile
-      &_hidden
-        display: none
-      &_visible
-        display: inline-block
-        order: 1
-  .menu
-    &-button
-      height: 11px
-      width: 16px
-      cursor: pointer
-      &_mobile
-        &_visible
-          display: flex
-          flex-direction: column
-          justify-content: space-between
-      &__line
-        width: 100%
-        height: 1px
-        background-color: $light
   .recommend
     &-wrapper
       flex-direction: column-reverse
@@ -121,12 +116,8 @@
     &__logo
       width: 99px
   .request
-    width: 100%
-    order: 3
-  .nav-menu
-    margin-top: 15px
-    &__list
-      min-width: 200px
+    &__button
+      width: 100%
   .recommend
     &::before
       height: 380px
@@ -160,6 +151,8 @@
         font-size: 13px
       &__item
         padding: 10px 5px
+      &__category
+        font-size: 9px
     &-content
       &__item
         padding: 15px 15px 45px
