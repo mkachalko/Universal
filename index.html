@@ -28,7 +28,7 @@
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">Web Design</a></li>
           </ul>
         </nav>
-        <button class="request header__request request_mobile_hidden">Оставить заявку</button>
+        <button data-toggle="modal" class="request header__request request_mobile_hidden">Оставить заявку</button>
         <div class="menu-button menu-button_mobile_visible">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -55,7 +55,7 @@
             </div>
             <span class="category category_blue recommend-content__category">Javascript</span>
             <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
-            <a class="recommend__link" href="#">Читать далее
+            <a class="button recommend__link" href="#">Читать далее
               <img src="img/recommend-arrow.svg" alt="Стрелка вправо" class="recommend__arrow">
             </a>
           </div>
@@ -70,7 +70,7 @@
             </div>
             <span class="category category_blue recommend-content__category">Javascript</span>
             <h2 class="recommend-content__title">Стандарты для написания скрипта</h2>
-            <a class="recommend__link" href="#">Читать далее</a>
+            <a class="button recommend__link" href="#">Читать далее</a>
           </div>
           
           <div id="info-tab-3" class="recommend-content__item recommend-content__item_third">
@@ -83,7 +83,7 @@
             </div>
             <span class="category category_purple recommend-content__category">html</span>
             <h2 class="recommend-content__title">Картинки на Retina дисплеях</h2>
-            <a class="recommend__link" href="#">Читать далее</a>
+            <a class="button recommend__link" href="#">Читать далее</a>
           </div>
 
           <div id="info-tab-4" class="recommend-content__item recommend-content__item_fourth">
@@ -96,7 +96,7 @@
             </div>
             <span class="category category_orange recommend-content__category">Web design</span>
             <h2 class="recommend-content__title">Лучшие плагины для Figma</h2>
-            <a class="recommend__link" href="#">Читать далее</a>
+            <a class="button recommend__link" href="#">Читать далее</a>
           </div>
 
           <div id="info-tab-5" class="recommend-content__item recommend-content__item_fifth">
@@ -109,7 +109,7 @@
             </div>
             <span class="category category_green recommend-content__category">css</span>
             <h2 class="recommend-content__title">CSS Grid Layout - какие свойства применить</h2>
-            <a class="recommend__link" href="#">Читать далее</a>
+            <a class="button recommend__link" href="#">Читать далее</a>
           </div>
 
 
@@ -145,7 +145,27 @@
     </div>
   </section>
   
+  <div class="modal">
+    <div data-toggle="close" class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a data-toggle="close" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title">Оставить заявку</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group"><input type="text" class="modal__input" placeholder="Ваше имя*" name="name" required></div>
+        <div class="input-group"><input type="tel" class="modal__input" placeholder="Номер телефона*" name="phone" required></div>
+        <div class="input-group"><input type="email" class="modal__input" placeholder="Адрес электронной почты*" name="email" required></div>
+        <textarea class="modal__message" placeholder="Ваше сообщение" name="message"></textarea>
+        <button class=" button modal__button" type="submit">Отправить</button>
+        <span class="modal__decryption">* Обязательные поля</span>
+      </form>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
