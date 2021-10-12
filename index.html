@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header header_mobile_fixed">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#" class="header__logo">
+          <img src="img/header-logo.svg" alt="Логотип: Universal" class="header-logo">
+        </a>
+        <nav class="nav-menu nav-menu_mobile_hidden">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Статьи</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Горячее</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">HTML</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">CSS</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">JavaScript</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Web Design</a></li>
+          </ul>
+        </nav>
+        <button class="request header__request request_mobile_hidden">Оставить заявку</button>
+        <div class="menu-button menu-button_mobile_visible">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </div>
+      </div>
+            
+    </div>
+  
+  </header>
+  <section class="recommend">
+    <div class="container">
+      <div class="wrapper recommend-wrapper">
+
+        <div class="recommend-content">
+
+          <div id="info-tab-1" class="recommend-content__item recommend-content__item_first recommend-content__item_active">
+            <div class="recommend__author">
+              <img src="img/recommend-avatar-1.png" alt="Аватар: разратобчик Давид Гуров" class="avatar recommend__avatar">
+              <div class="recommend__name-block">
+                <span class="recommend__name">Давид Гуров</span>
+                <span class="recommend__position">Разработчик</span>
+              </div>
+            </div>
+            <span class="category category_blue recommend-content__category">Javascript</span>
+            <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+            <a class="recommend__link" href="#">Читать далее
+              <img src="img/recommend-arrow.svg" alt="Стрелка вправо" class="recommend__arrow">
+            </a>
+          </div>
+
+          <div id="info-tab-2" class="recommend-content__item recommend-content__item_second">
+            <div class="recommend__author">
+              <img src="img/recommend-avatar-2.jpg" alt="Аватар: разратобчик Давид Гуров" class="avatar recommend__avatar">
+              <div class="recommend__name-block">
+                <span class="recommend__name">Максим Иванов</span>
+                <span class="recommend__position">Разработчик</span>
+              </div>
+            </div>
+            <span class="category category_blue recommend-content__category">Javascript</span>
+            <h2 class="recommend-content__title">Стандарты для написания скрипта</h2>
+            <a class="recommend__link" href="#">Читать далее</a>
+          </div>
+          
+          <div id="info-tab-3" class="recommend-content__item recommend-content__item_third">
+            <div class="recommend__author">
+              <img src="img/recommend-avatar-3.jpg" alt="Аватар: разратобчик Давид Гуров" class="avatar recommend__avatar">
+              <div class="recommend__name-block">
+                <span class="recommend__name">Вера Петрова</span>
+                <span class="recommend__position">Разработчик</span>
+              </div>
+            </div>
+            <span class="category category_purple recommend-content__category">html</span>
+            <h2 class="recommend-content__title">Картинки на Retina дисплеях</h2>
+            <a class="recommend__link" href="#">Читать далее</a>
+          </div>
+
+          <div id="info-tab-4" class="recommend-content__item recommend-content__item_fourth">
+            <div class="recommend__author">
+              <img src="img/recommend-avatar-2.jpg" alt="Аватар: разратобчик Давид Гуров" class="avatar recommend__avatar">
+              <div class="recommend__name-block">
+                <span class="recommend__name">Андрей Маслов</span>
+                <span class="recommend__position">Разработчик</span>
+              </div>
+            </div>
+            <span class="category category_orange recommend-content__category">Web design</span>
+            <h2 class="recommend-content__title">Лучшие плагины для Figma</h2>
+            <a class="recommend__link" href="#">Читать далее</a>
+          </div>
+
+          <div id="info-tab-5" class="recommend-content__item recommend-content__item_fifth">
+            <div class="recommend__author">
+              <img src="img/recommend-avatar-3.jpg" alt="Аватар: разратобчик Давид Гуров" class="avatar recommend__avatar">
+              <div class="recommend__name-block">
+                <span class="recommend__name">Елена Счастная</span>
+                <span class="recommend__position">Разработчик</span>
+              </div>
+            </div>
+            <span class="category category_green recommend-content__category">css</span>
+            <h2 class="recommend-content__title">CSS Grid Layout - какие свойства применить</h2>
+            <a class="recommend__link" href="#">Читать далее</a>
+          </div>
+
+
+        </div>
+
+        <div class="recommend-tabs">
+          <h2 class="recommend-tabs__title">Рекомендуем</h2>
+          <div class="recommend-tabs__wrapper">
+            <div data-target="#info-tab-1" class="recommend-tabs__item recommend-tabs__item_active">
+              <span class="category category_bluegreen recommend-tabs__category">css</span>
+              <span class="recommend__description">Как использовать CSS float после того, как вышел Flexbox</span>
+            </div>
+            <div data-target="#info-tab-2" class="recommend-tabs__item">
+              <span class="category category_greyblue recommend-tabs__category">javascript</span>
+              <span class="recommend__description">На каком стандарте писать скрипты, если я фрилансер</span>
+            </div>
+            <div data-target="#info-tab-3" class="recommend-tabs__item">
+              <span class="category category_purple recommend-tabs__category">html</span>
+              <span class="recommend__description">Правильно вставляем картинку на сайт для Retina дисплея</span>
+            </div>
+            <div data-target="#info-tab-4" class="recommend-tabs__item">
+              <span class="category category_orange recommend-tabs__category">Web design</span>
+              <span class="recommend__description">ТОП-10 плагинов для Figma</span>
+            </div>
+            <div data-target="#info-tab-5" class="recommend-tabs__item">
+              <span class="category category_green recommend-tabs__category">css</span>
+              <span class="recommend__description">Возможности CSS Grid Layout , которые уже можно применять</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
