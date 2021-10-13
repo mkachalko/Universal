@@ -1,0 +1,254 @@
+.articles
+  margin-bottom: 60px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, 170px)
+    gap: 30px
+  &__item
+    background-color: $light
+    &_small
+      padding: 25px
+      padding-bottom: 30px
+      display: flex
+      flex-wrap: wrap
+  &__avatar
+    border-radius: 50%
+    object-fit: cover
+    &_small
+      width: 30px
+      height: 30px
+      margin-right: -6px
+    &_large
+      width: 45px
+      height: 45px
+      margin-right: 10px
+  &__title
+    margin: 0
+    margin-bottom: 5px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $title-color
+  &__text
+    margin-top: 0
+    margin-bottom: 10px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    &_inline
+      margin: 0
+    &_mb30
+      margin-bottom: 30px
+  &__author
+    &_bold
+      font-weight: 900
+    &_light
+      width: 100%
+      color: $light
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      opacity: 0.85
+      margin-top: -2px
+    &-block
+      display: flex
+      align-items: center
+    &-info
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      flex-grow: 1
+  &__date
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    align-self: flex-end
+    &_light
+      opacity: 0.4
+      color: $light
+  &__icon
+    width: 14px
+    height: 14px
+    margin-right: 5px
+    opacity: 0.4
+  &__counter
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    opacity: 0.4
+  &__file
+    padding-left: 25px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #C1F4F5
+    margin-bottom: 7px
+
+.dream-job
+  padding-top: 33px
+  grid-column: span 2
+  grid-row: span 2
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  &__main
+    padding-left: 35px
+    background-image: url(../img/articles/arlicles-bg.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+    flex-grow: 1
+    &-wrapper
+      max-width: 238px
+  &__caption
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 12px 35px 12px 35px
+    border-top: $line
+  &__title
+    margin-top: 20px
+    margin-bottom: 25px
+    font-size: 25px
+    line-height: 30px
+
+.comments
+  display: flex
+  align-items: center
+  padding-top: 1px
+  &__icon
+    opacity: 1
+  &__counter
+    color: #939699
+    opacity: 1
+.likes
+  display: flex
+  align-items: center
+.popular
+  position: relative
+  grid-row: span 2
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/articles/popular-bg.jpg)
+  background-size: cover
+  padding: 45px 27px 25px 25px
+  &__category
+    margin-bottom: 23px
+    color: #E7D9FF
+  &__title
+    margin-bottom: 27px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $light
+.file
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 25px 0 13px
+  background-color: #3BBDC4
+  &__title
+    margin: 0 25px 0
+    font-size: 16px
+    line-height: 25px
+    color: $light
+    z-index: 10
+  &::after
+    content: ''
+    position: absolute
+    top: 24px
+    right: 22px
+    background-image: url(../img/articles/file.svg)
+    background-repeat: no-repeat
+    width: 56px
+    height: 72px
+    opacity: 0.5
+
+.download
+  padding-top: 12px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-top: 1px solid #96E2E3
+  &__icon
+    margin-right: 10px
+  &__text
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+.tags
+  grid-row: span 2
+  &__title
+    margin: 0
+    padding: 20px 25px
+    font-family: "Lato", sans-serif
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $title-color
+    border-bottom: $line
+  &__wrapper
+    padding: 25px 15px 15px 25px
+    display: flex
+    flex-wrap: wrap
+  &__item
+    padding: 4px 14px
+    margin-right: 10px
+    margin-bottom: 15px
+    border: $line
+    border-radius: 5px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $title-color
+    &_hover
+      position: relative
+  &__icon
+    position: absolute
+    top: 21px
+    left: 30px
+.instruments
+  grid-row: span 2
+  &__image
+    height: 275px
+    width: 100%
+    object-fit: cover
+  &__title
+    padding: 13px 25px
+    margin: 0
+.social-networks
+  padding: 30px 36px 40px
+  text-align: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  &__title
+    font-size: 20px
+    line-height: 25px
+    margin-bottom: 25px
+    width: 100%
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    width: 190px
