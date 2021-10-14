@@ -170,6 +170,10 @@
     &-secondary
       max-width: 100%
       width: 100%
+  .career
+    &-wrapper
+      grid-template-columns: 1fr
+      gap: 30px
 
 @media ( max-width: 767.98px )
 
@@ -335,7 +339,18 @@
           font-size: 13px
       &__info
         font-size: 11px
-
+  .career
+    &-articles
+      grid-template-columns: 1fr
+      &__main
+        grid-column: span 1
+      &__text
+        max-width: 100%
+        &_mb45
+          max-width: 215px
+    &-slider
+      &__slide
+        padding: 25px 20px 90px 25px
 @media (max-width: 480px)
   .recommend
     &-tabs
@@ -379,6 +394,19 @@
         height: 210px
         margin-top: 10px
         margin-right: 0
+  .career
+    &-slider
+      min-height: 450px
+    &__title
+      font-size: 24px
+      line-height: 30px
+    &-articles
+      &__main
+        padding: 25px 25px 40px
+      &__text
+        &_mb45
+          max-width: 155px
+
 @media (max-width: 991.98px) and (orientation: landscape)
   .modal
     &__dialog

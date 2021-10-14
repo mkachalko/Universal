@@ -1,0 +1,148 @@
+.career
+  background-color: $dark
+  padding: 60px 0
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 30px
+  &-slider
+    width: 100%
+    min-height: 570px
+    &__slide
+      padding: 50px 50px 100px 50px
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      &_first
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/career/slide-bg-1.jpg)
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+      &_second
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/career/slide-bg-2.jpg)
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+      &_third
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/career/slide-bg-3.jpg)
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+      &_fourth
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/career/slide-bg-4.jpg)
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+      &_fifth
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/career/slide-bg-5.jpg)
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+
+  &__hot
+    top: 18px
+    left: 19px
+  &__author
+    margin-bottom: 33px
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    color: $light
+  &__avatar
+    width: 45px
+    height: 45px
+    margin-bottom: 8px
+  &__name
+    font-size: 14px
+    line-height: 20px
+    opacity: 0.85
+  &__position
+    font-size: 12px
+    line-height: 15px
+    opacity: 0.4
+  &__title
+    margin: 0
+    margin-bottom: 45px
+    text-align: center
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $light
+  &__icon
+    width: 19px
+    height: 15px
+    margin-right: 9px
+  &__counter
+    font-style: normal
+    font-weight: normal
+    color: #C5E4FC
+    margin-left: 8px
+  &__link
+    display: flex
+    width: max-content
+    align-items: center
+  &-articles
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 29px
+    row-gap: 28px
+    &__main
+      grid-column: span 2
+      padding: 33px 35px 50px
+      background-image: url(../img/career/articles-bg.png)
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-size: 16px
+      line-height: 25px
+      font-style: normal
+      font-weight: bold
+      color: $title-color
+      &_large
+        margin-bottom: 15px
+        max-width: 245px
+        font-size: 25px
+        line-height: 30px
+    &__text
+      margin: 0
+      margin-bottom: 7px
+      max-width: 215px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      &_mb45
+        margin-bottom: 45px
+
+    &__arrow
+      margin-left: 5px
+  &__category
+    margin-bottom: 20px
+  &__item
+    padding: 26px 25px 30px
+    background-color: $light
+.date
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $info-color
+
+.swiper-pagination
+  margin-bottom: 33px
+  &-bullet
+    background-color: #D9DADB
+    &-active
+      background-color: $light
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0px var(--swiper-pagination-bullet-horizontal-gap,9px)

@@ -91,4 +91,27 @@ $(document).ready(function () {
     $(this).toggleClass('bookmark_active')
   })
 
+  const careerSlider = new Swiper('.career-slider', {
+  // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+  });
+
 });
