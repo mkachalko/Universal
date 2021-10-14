@@ -292,9 +292,9 @@
         <div class="wrapper social-networks articles__item">
           <h2 class="articles__title social-networks__title">Наши соцсети</h2>
           <div class="social-networks__wrapper">
-            <a href="https://www.facebook.com/" target="_blank" class="social-networks__link"><img src="img/articles/facebook.svg" alt="" class="social-networks__icon"></a>
-            <a href="https://twitter.com/" target="_blank" class="social-networks__link"><img src="img/articles/twitter.svg" alt="" class="social-networks__icon"></a>
-            <a href="https://www.youtube.com/" target="_blank" class="social-networks__link"><img src="img/articles/youtube.svg" alt="" class="social-networks__icon"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="social-networks__link"><img src="img/articles/facebook.svg" alt="Иконка: Facebook" class="social-networks__icon"></a>
+            <a href="https://twitter.com/" target="_blank" class="social-networks__link"><img src="img/articles/twitter.svg" alt="Иконка: Twitter" class="social-networks__icon"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="social-networks__link"><img src="img/articles/youtube.svg" alt="Иконка: YouTube" class="social-networks__icon"></a>
           </div>          
         </div>
 
@@ -332,7 +332,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">342</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">830</span>
                 </div>
@@ -356,7 +356,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">27</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">129</span>
                 </div>
@@ -383,7 +383,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">30</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">284</span>
                 </div>
@@ -411,7 +411,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">102</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">1,293</span>
                 </div>
@@ -439,7 +439,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">5</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">82</span>
                 </div>
@@ -467,7 +467,7 @@
                   <img src="img/all/comment.svg" alt="Иконка: комментарии" class="comments__icon all-main__icon">
                   <span class="comments__counter all-main__counter">101</span>
                 </div>
-                <div class="likes all-mail__likes">
+                <div class="likes all-main__likes">
                   <img src="img/all/like.svg" alt="Иконка: нравится" class="likes__icon all-main__icon">
                   <span class="likes__counter all-main__counter">432</span>
                 </div>
@@ -692,6 +692,96 @@
 
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+      <form action="send.php" method="POST" class="form footer__form">        
+        <div class="input-wrapper"><input type="email" class="footer__input" placeholder="Email" name="email"
+            required></div>
+        <button class=" button footer__button" type="submit">Подписаться</button>
+      </form>
+      <div class="footer-menu footer__menu">
+        <div class="footer-menu__item footer-menu__item_red">
+          <h3 class="footer__list-title">Новости</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Обновления</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Экспресс</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Politics</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_purple">
+          <h3 class="footer__list-title">Статьи</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">HTML</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">CSS</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">JavaScript</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_blue">
+          <h3 class="footer__list-title">Видеоуроки</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Скринкасты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Уроки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_orange">
+          <h3 class="footer__list-title">Курсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Платные интенсивы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Бесплатные стримы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мастер-классы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Менторство</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Буткемпы</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_green">
+          <h3 class="footer__list-title">Информация</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Политика данных</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Оферта сайта</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Реквизиты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_greyblue">
+          <h3 class="footer__list-title">Категории</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Горячее</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Подборки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мнения</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=" contacts footer__contacts">
+        <div class="contacts__menu">
+          <a href="#"><img src="img/footer-logo.svg" alt="Логотип: Universal" class="footer__logo"></a>
+          <ul class="contacts__list">
+            <li class="contacts__item"><a href="#" class="contacts__link">Контакты</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Работа у нас</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Реклама</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="contacts__social-networks">
+          <a href="https://www.facebook.com/" class="contacts__social-networks-link" target="_blank"><img src="img/facebook.svg" alt="Иконка: Facebook" class="footer__icon"></a>
+          <a href="https://twitter.com/" class="contacts__social-networks-link" target="_blank"><img src="img/twitter.svg" alt="Иконка: Twitter" class="footer__icon"></a>
+          <a href="https://www.youtube.com/" class="contacts__social-networks-link" target="_blank"><img src="img/youtube.svg" alt="Иконка: YouTube" class="footer__icon"></a>
+          <a href="https://instagram.com" class="contacts__social-networks-link" target="_blank"><img src="img/Instagram.svg" alt="Иконка: Instagram" class="footer__icon"></a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p class="footer__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки,
+        подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+        <span class="footer__copyright">© 2020 Universal Magazine</span>
+      </div>
+    </div>
+  </footer>
 
   <div class="modal">
     <div data-toggle="close" class="modal__overlay"></div>

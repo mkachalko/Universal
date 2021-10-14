@@ -174,6 +174,20 @@
     &-wrapper
       grid-template-columns: 1fr
       gap: 30px
+  .footer
+    &-menu
+      grid-template-columns: repeat(3, 1fr )
+      row-gap: 30px
+    &__text
+      max-width: 480px
+  .contacts
+    flex-direction: column
+    &__list
+      flex-grow: 1
+      justify-content: space-evenly
+    &__social-networks
+      align-self: center
+      margin-top: 25px
 
 @media ( max-width: 767.98px )
 
@@ -222,6 +236,33 @@
         line-height: 16px
         &_mb45
           margin-bottom: 25px
+  .footer
+    &__title
+      font-size: 34px
+      line-height: 44px
+    &__form
+      margin-bottom: 20px
+    &__input
+      width: 280px
+    &__logo
+      margin-right: 0
+      margin-bottom: 15px
+    &__info
+      flex-wrap: wrap
+      padding-top: 25px
+    &__text
+      max-width: none
+      margin-bottom: 15px
+  .contacts
+    &__menu
+      flex-direction: column
+      align-items: center
+    &__list
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-right: 0
+      margin-bottom: 11px
 
 @media ( max-width: 575.98px )
   .header
@@ -351,6 +392,19 @@
     &-slider
       &__slide
         padding: 25px 20px 90px 25px
+  .footer
+    &__title
+      font-size: 30px
+      line-height: 35px
+    &-menu
+      grid-template-columns: 1fr 1fr
+    &__form
+      flex-direction: column
+      align-items: center
+    &__input
+      margin-right: 0
+    &__button
+      margin-top: 10px
 @media (max-width: 480px)
   .recommend
     &-tabs
