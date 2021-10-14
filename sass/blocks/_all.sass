@@ -1,0 +1,149 @@
+.all
+  padding: 60px 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__main
+    margin-right: 29px
+  &-main
+    max-width: 848px
+    background-color: $light
+    padding: 0 25px
+    &__item
+      position: relative
+      display: flex
+      padding: 25px 0 24px
+      border-bottom: $line
+      max-height: 245px
+    &__image
+      width: 336px
+      object-fit: cover
+      margin-right: 25px
+
+    &__category
+      margin-bottom: 16px
+    &__title
+      margin: 0
+      margin-bottom: 11px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $title-color
+    &__text
+      margin: 0
+      margin-bottom: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      &_mb45
+        margin-bottom: 45px
+    &__info
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $info-color
+    &__icon
+      margin-right: 6px
+      width: 16px
+      height: 15px
+    &__date
+      margin-right: 10px
+    &__comments
+      margin-right: 10px
+    &__bookmark
+      position: absolute
+      top: 25px
+      right: 0
+      width: 20px
+      height: 20px
+      cursor: pointer
+
+  &-secondary
+    max-width: 263px
+    background-color: $light
+    &__title
+      padding: 20px 25px 19px
+      margin: 0
+      font-family: Lato, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $title-color
+      border-bottom: $line
+    &__list
+      list-style: none
+      padding: 0 25px
+      margin: 0
+      counter-reset: li
+    &__item
+      position: relative
+      display: flex
+      padding: 17px 0 17px
+      border-bottom: $line
+      &:last-child
+        border: none
+      &::after
+        content: counter(li)
+        counter-increment: li
+        position: absolute
+        top: 20px
+        right: 0
+        font-family: Lato, sans-serif
+        font-size: 70px
+        font-weight: 800
+        font-style: italic
+        line-height: 50px
+        color: $title-color
+        opacity: 0.08
+
+    &__image
+      width: 60px
+      height: 60px
+      object-fit: cover
+      margin-right: 10px
+    &__article
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &-title
+        margin: 0
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $text-color
+    &__info
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $info-color
+    &__link
+      display: flex
+      justify-content: center
+      padding: 11px 0 14px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $title-color
+      border-top: $line
+
+.likes
+  &__icon
+    width: 13px
+    height: 12px
+.bookmark
+  &_active
+    fill: #FF4F52

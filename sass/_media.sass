@@ -34,6 +34,12 @@
       height: 355px
     &__title
       padding: 25px 24px
+  .all
+    &-main
+      &__item
+        max-height: none
+    &-secondary
+      flex-shrink: 0
 
 @media ( max-width: 991.98px )
   body
@@ -153,6 +159,17 @@
     &__title
       font-size: 33px
       line-height: 45px
+  .all
+    &-wrapper
+      flex-wrap: wrap
+    &__main
+      margin-right: 0
+      margin-bottom: 30px
+    &-main
+      max-width: 100%
+    &-secondary
+      max-width: 100%
+      width: 100%
 
 @media ( max-width: 767.98px )
 
@@ -187,6 +204,20 @@
     &__item
       margin-right: 20px
       margin-bottom: 20px
+  .all
+    &-main
+      &__image
+        width: 230px
+      &__category
+        margin-bottom: 11px
+      &__title
+        font-size: 18px
+        line-height: 23px
+      &__text
+        font-size: 12px
+        line-height: 16px
+        &_mb45
+          margin-bottom: 25px
 
 @media ( max-width: 575.98px )
   .header
@@ -265,6 +296,46 @@
       font-size: 24px
       line-height: 35px
       text-align: start
+  .all
+    &-main
+      padding: 0px 15px
+      &__item
+        padding: 15px 0 15px
+      &__image
+        width: 120px
+        margin-right: 10px
+      &__category
+        font-size: 11px
+        margin-bottom: 8px
+      &__title
+        font-size: 15px
+        line-height: 18px
+      &__text
+        font-size: 11px
+        line-height: 15px
+        margin-bottom: 8px
+      &__info
+        font-size: 10px
+      &__bookmark
+        top: 15px
+    &-secondary
+      &__title
+        padding: 15px
+        font-size: 13px
+        line-height: 15px
+      &__list
+        padding: 0 15px
+      &__item
+        padding: 15px 0
+      &__image
+        width: 50px
+        height: 50px
+      &__article
+        &-title
+          font-size: 13px
+      &__info
+        font-size: 11px
+
 @media (max-width: 480px)
   .recommend
     &-tabs
@@ -298,7 +369,16 @@
     &__title
       font-size: 18px
       line-height: 28px
-
+  .all
+    &-main
+      &__item
+        flex-direction: column
+      &__image
+        order: 1
+        width: 100%
+        height: 210px
+        margin-top: 10px
+        margin-right: 0
 @media (max-width: 991.98px) and (orientation: landscape)
   .modal
     &__dialog

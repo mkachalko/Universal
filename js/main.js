@@ -85,4 +85,10 @@ $(document).ready(function () {
     translation: {9: {pattern: /[0-9]/}}
   });
 
+  var bookmark = $('.bookmark');
+
+  bookmark.on('click', function(){
+    $(this).toggleClass('bookmark_active')
+  })
+
 });
