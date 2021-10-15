@@ -75,7 +75,7 @@ $(document).ready(function () {
         },
         email: {
           required: "Пожалуйста, укажите свой email",
-          email: "Ваш email должен вводиться в формате name@domain.com"
+          email: "Введите в формате name@domain.com"
         }
       }
     });

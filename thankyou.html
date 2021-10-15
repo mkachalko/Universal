@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header header_mobile_fixed">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="header__logo">
+          <img src="img/header-logo.svg" alt="Логотип: Universal" class="header-logo">
+        </a>
+        <nav class="nav-menu nav-menu_mobile_hidden">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Статьи</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Горячее</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">HTML</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">CSS</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">JavaScript</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Web Design</a></li>
+          </ul>
+        </nav>
+        <div class="request header__request request_mobile_hidden"><button data-toggle="modal"
+            class="request__button">Оставить заявку</button></div>
+        <div class="menu-button menu-button_mobile_visible">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="thanks">
+    <div class="container">
+      <div class="wrapper thanks-wrapper">
+        <h2 class="thanks__title">Ваша заявка успешно отправлена!</h2>
+        <p class="thanks__text">Спасибо за обратную связь. Наши читатели очень важны для нас!</p>
+        <a href="index.html" class="button thanks__button">Вернуться на главную</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+      <form action="send.php" method="POST" class="form footer__form">
+        <div class="input-wrapper"><input type="email" class="footer__input" placeholder="Email" name="email" required>
+        </div>
+        <button class=" button footer__button" type="submit">Подписаться</button>
+      </form>
+      <div class="footer-menu footer__menu">
+        <div class="footer-menu__item footer-menu__item_red">
+          <h3 class="footer__list-title">Новости</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Обновления</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Экспресс</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Politics</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_purple">
+          <h3 class="footer__list-title">Статьи</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">HTML</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">CSS</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">JavaScript</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_blue">
+          <h3 class="footer__list-title">Видеоуроки</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Скринкасты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Уроки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_orange">
+          <h3 class="footer__list-title">Курсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Платные интенсивы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Бесплатные стримы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мастер-классы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Менторство</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Буткемпы</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_green">
+          <h3 class="footer__list-title">Информация</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Политика данных</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Оферта сайта</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Реквизиты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu__item footer-menu__item_greyblue">
+          <h3 class="footer__list-title">Категории</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Горячее</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Подборки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мнения</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=" contacts footer__contacts">
+        <div class="contacts__menu">
+          <a href="index.html"><img src="img/footer-logo.svg" alt="Логотип: Universal" class="footer__logo"></a>
+          <ul class="contacts__list">
+            <li class="contacts__item"><a href="#" class="contacts__link">Контакты</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Работа у нас</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Реклама</a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="contacts__social-networks">
+          <a href="https://www.facebook.com/" class="contacts__social-networks-link" target="_blank"><img
+              src="img/facebook.svg" alt="Иконка: Facebook" class="footer__icon"></a>
+          <a href="https://twitter.com/" class="contacts__social-networks-link" target="_blank"><img
+              src="img/twitter.svg" alt="Иконка: Twitter" class="footer__icon"></a>
+          <a href="https://www.youtube.com/" class="contacts__social-networks-link" target="_blank"><img
+              src="img/youtube.svg" alt="Иконка: YouTube" class="footer__icon"></a>
+          <a href="https://instagram.com" class="contacts__social-networks-link" target="_blank"><img
+              src="img/Instagram.svg" alt="Иконка: Instagram" class="footer__icon"></a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p class="footer__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+          разработке: статьи, новости, видеоуроки,
+          подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+        <span class="footer__copyright">© 2020 Universal Magazine</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div data-toggle="close" class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a data-toggle="close" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title">Оставить заявку</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group"><input type="text" class="modal__input" placeholder="Ваше имя*" name="name" required>
+        </div>
+        <div class="input-group"><input type="tel" class="modal__input" placeholder="Номер телефона*" name="phone"
+            required></div>
+        <div class="input-group"><input type="email" class="modal__input" placeholder="Адрес электронной почты*"
+            name="email" required></div>
+        <textarea class="modal__message" placeholder="Ваше сообщение" name="message"></textarea>
+        <button class=" button modal__button" type="submit">Отправить</button>
+        <span class="modal__decryption">* Обязательные поля</span>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
