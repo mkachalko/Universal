@@ -1,6 +1,8 @@
 @media ( max-width: 1199.98px )
   .container
     width: 960px
+    &_secondary
+      width: 800px
   .request
     width: 160px
   .useful
@@ -48,6 +50,8 @@
     margin-top: 46px
   .container
     width: 740px
+    &_secondary
+      width: 620px
   .header
     &_mobile
       &_fixed
@@ -102,6 +106,8 @@
         width: 100%
         height: 1px
         background-color: $light
+        &_dark
+          background-color: $dark
   .recommend
     &-content
       &__item
@@ -200,6 +206,12 @@
     &__social-networks
       align-self: center
       margin-top: 25px
+  .preview
+    &__title
+      font-size: 40px
+      line-height: 55px
+    &__bookmark
+      top: 82px
 
 @media ( max-width: 767.98px )
 
@@ -276,6 +288,18 @@
     &__item
       margin-right: 0
       margin-bottom: 11px
+  .preview
+    &__menu
+      margin-bottom: 30px
+    &__title
+      font-size: 30px
+      line-height: 39px
+    &__text
+      font-size: 15px
+      line-height: 22px
+    &__bookmark
+      top: 55px
+      height: 23px
 
 @media ( max-width: 575.98px )
   .header
@@ -429,6 +453,33 @@
       margin-right: 0
     &__button
       margin-top: 10px
+  .preview
+    &__menu
+      flex-wrap: wrap
+      margin-bottom: 23px
+    &__category
+      order: 1
+      margin-top: 26px
+    &-nav
+      width: 100%
+      font-size: 12px
+      min-width: auto
+    &__home
+      width: 14px
+    &__bookmark
+      left: auto
+      right: 0
+      top: 42px
+    &__title
+      font-size: 25px
+      line-height: 33px
+      margin-bottom: 15px
+    &__text
+      font-size: 13px
+      line-height: 18px
+      margin-bottom: 23px
+  .arrow-block
+    min-width: 138px
 
 @media (max-width: 480px)
   .recommend
