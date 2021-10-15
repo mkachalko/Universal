@@ -12,6 +12,8 @@
       padding-bottom: 30px
       display: flex
       flex-wrap: wrap
+    &-link
+      display: flex
   &__avatar
     border-radius: 50%
     object-fit: cover
@@ -142,6 +144,7 @@
   justify-content: flex-end
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/articles/popular-bg.jpg)
   background-size: cover
+  background-position: center
   padding: 45px 27px 25px 25px
   &__category
     margin-bottom: 23px
@@ -222,12 +225,7 @@
     font-size: 14px
     line-height: 20px
     color: $title-color
-    &_hover
-      position: relative
-  &__icon
-    position: absolute
-    top: 21px
-    left: 30px
+
 .instruments
   grid-row: span 2
   &__image
