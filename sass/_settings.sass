@@ -29,15 +29,20 @@
   font-style: italic
   font-display: swap
 
-body
+.body
   font-family: "Lato", sans-serif
   background-color: #E5E5E5
   // overflow-x: hidden
   // margin-right: calc(-1 * (100vw - 100%))
   // margin-left: calc(-1 * (100vw - 100%))
+  &_light
+    background-color: $light
 .container
   width: 1140px
   margin: auto
+  position: relative
+  &_secondary
+    width: 946px
 h1,
 h2,
 h3

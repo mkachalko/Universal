@@ -1,6 +1,8 @@
 .header
-  padding: 13px 0 15px
+  padding: 15px 0 15px
   background-color: $dark
+  &_light
+    background-color: $light
   &-wrapper
     display: flex
     align-items: center
@@ -19,12 +21,16 @@
     display: flex
     justify-content: space-between
     padding: 0
+    margin: 0
     min-width: 540px
     list-style: none
     font-style: normal
     font-weight: 900
     font-size: 14px
     line-height: 20px
+    &_grey
+      color: $info-color
+      min-width: 531px
 .request
   width: 261px
   &__button

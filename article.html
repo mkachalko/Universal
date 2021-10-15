@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal</title>
+  <title>Новый налоговый режим для фрилансеров</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
@@ -13,18 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body">
-  <header class="header header_mobile_fixed">
+<body class="body body_light">
+  <header class="header header_light header_mobile_fixed">
     <div class="container">
       <div class="header-wrapper">
         <a href="index.html" class="header__logo">
-          <img src="img/header-logo.svg" alt="Логотип: Universal" class="header-logo">
+          <img src="img/article/logo.svg" alt="Логотип: Universal" class="header-logo">
         </a>
         <nav class="nav-menu nav-menu_mobile_hidden">
-          <ul class="nav-menu__list">
+          <ul class="nav-menu__list nav-menu__list_grey">
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">Статьи</a></li>
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Горячее</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Курсы</a></li>
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">HTML</a></li>
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">CSS</a></li>
             <li class="nav-menu__item"><a href="#" class="nav-menu__link">JavaScript</a></li>
@@ -44,12 +44,54 @@
 
   </header>
 
-  <section class="thanks">
+  <section class="preview">
     <div class="container">
-      <div class="wrapper thanks-wrapper">
-        <h2 class="thanks__title">Ваша заявка успешно отправлена!</h2>
-        <p class="thanks__text">Спасибо за обратную связь. Наши читатели очень важны для нас!</p>
-        <a href="index.html" class="button thanks__button">Вернуться на главную</a>
+      <svg class="bookmark-wrapper preview__bookmark" width="14" height="18" viewBox="0 0 14 18" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path class="bookmark" fill-rule="evenodd" clip-rule="evenodd"
+          d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z" fill="#BCBFC2" />
+      </svg>
+      <div class="preview-wrapper container container_secondary">
+
+        <div class="preview__menu">
+          <span class="category category_blue preview__category">Новости</span>
+          <div class="preview-nav">
+            <a href="#" class="preview__link">
+              <img src="img/article/Home.svg" alt="Иконка: домой" class="preview__home">
+              На главную
+            </a>
+            <div class="arrow-block">
+              <a href="#" class="preview__link">
+                <img src="img/article/Arrow-left.svg" alt="Иконка: назад" class="preview__arrow">
+                Назад
+              </a>
+              <a href="#" class="preview__link">                
+                Вперед
+                <img src="img/article/Arrow-right.svg" alt="Иконка: вперед" class="preview__icon preview__icon_ml10">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="preview__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h1>
+        <p class="preview__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как
+        работает режим и кому он подходит, а кому нет.</p>
+
+        <div class="preview__info">
+          <div class="preview__date">
+            <img src="img/article/Clock.svg" alt="Иконка: часы" class="preview__icon">
+            <span class="preview__date-text">6 августа, 10:30</span>
+          </div>
+          <div class="likes preview__likes">
+            <img src="img/article/like.svg" alt="Иконка: нравится" class="likes__icon preview__icon">
+            <span class="likes__counter preview__counter">830</span>
+          </div>
+          <div class="comments preview__comments">
+            <img src="img/article/Comment.svg" alt="Иконка: комментарии" class="comments__icon preview__icon">
+            <span class="comments__counter preview__counter">19</span>
+          </div>          
+        </div>
+
       </div>
     </div>
   </section>
