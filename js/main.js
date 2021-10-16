@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.nav-menu').toggleClass('nav-menu_mobile_visible');
     $('.request').toggleClass('request_mobile_visible');
     $('.nav-menu__list').toggleClass('nav-menu__list_mobile_visible');
-     
+    body.toggleClass('lock'); 
    });
 
   var modalButton = $('[data-toggle=modal]');
@@ -81,7 +81,7 @@ $(document).ready(function () {
     });
   });
 
-  $('[name=phone]').mask('+999 (99) 999-99-99', {
+  $('[name=phone]').mask('+7 (999) 999-99-99', {
     translation: {9: {pattern: /[0-9]/}}
   });
 
@@ -107,6 +107,25 @@ $(document).ready(function () {
     disableOnInteraction: false,
     },
 
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+  });
+
+  const articleSlider = new Swiper('.article-slider', {
+  // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+  navigation: {
+    nextEl: '.article-slider__button_next',
+    prevEl: '.article-slider__button_prev',
+  },
+
+    
     keyboard: {
       enabled: true,
       onlyInViewport: false,
