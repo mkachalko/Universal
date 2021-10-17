@@ -251,6 +251,9 @@
         margin-bottom: 30px
     &__image
       height: 210px
+  .load
+    &__icon
+      margin-left: 0
 @media ( max-width: 767.98px )
 
   .container
@@ -341,6 +344,25 @@
   .material
     &__image
       width: 200px
+  .comment
+    padding-top: 45px
+    &__title
+      font-size: 25px
+      line-height: 35px
+      margin-bottom: 20px
+      &-block
+        flex-direction: column
+        align-items: start
+      &-counter
+        font-size: 25px
+        line-height: 35px
+    &-form
+      &__title
+        font-size: 15px
+        line-height: 20px
+      &__avatar
+        width: 55px
+        height: 55px
 
 @media ( max-width: 575.98px )
   .container
@@ -623,7 +645,18 @@
         margin-bottom: 30px
     &__title
       width: 100%
-
+  .comment
+    &__text
+      font-size: 12px
+      line-height: 20px
+    &__avatar
+      width: 55px
+      height: 55px
+    &__name
+      font-size: 14px
+      line-height: 18px
+  .answer
+    padding-left: 65px
 @media (max-width: 480px)
   .recommend
     &-tabs
@@ -685,6 +718,18 @@
       &__text
         &_mb45
           max-width: 155px
+  .footer
+    padding-top: 30px
+  .comment
+    &-form
+      padding: 30px 15px 25px 15px
+    &__author
+      flex-direction: column
+      align-items: flex-start
+    &__date
+      align-self: self-start
+  .answer
+    padding-left: 50px
 
 @media (max-width: 991.98px) and (orientation: landscape)
   .modal
