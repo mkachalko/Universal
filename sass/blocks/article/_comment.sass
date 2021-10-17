@@ -1,0 +1,212 @@
+.comment
+  padding-top: 90px
+  padding-bottom: 30px
+  &-wrapper
+    max-width: 750px
+  &__title
+    margin: 0
+    margin-right: 10px
+    font-weight: bold
+    color: $title-color
+    font-size: 40px
+    line-height: 50px
+    &-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 29px
+      width: 100%
+      border-bottom: $line
+    &-wrapper
+      display: flex
+      font-style: normal
+      font-size: 40px
+      line-height: 50px
+    &-counter
+      font-weight: normal
+      color: $info-color
+  &__link
+    display: flex
+    align-items: center
+    width: max-content
+    padding: 10px 20px
+    border: $line
+    border-radius: 20px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 18px
+    color: $title-color
+    &-icon
+      width: 20px
+      height: 20px
+      margin-right: 10px
+  &__item
+    padding: 21px 0 29px
+    display: flex
+    border-bottom: $line
+    &_last
+      border: none
+    &_hidden
+      display: none
+
+  &__avatar
+    margin-right: 15px
+    width: 75px
+    height: 75px
+    object-fit: cover
+  &__author
+    display: flex
+    flex-wrap: wrap
+  &__name
+    margin-right: 10px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: -0.2px
+    color: $title-color
+  &__date
+    align-self: center
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $info-color
+  &__text
+    margin-top: 10px
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $text-color
+    max-width: 570px
+    &_mb45
+      margin-bottom: 45px
+  &__info
+    display: flex
+    width: 100%
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+  &__icon
+    margin-right: 5px
+  &__counter
+    font-weight: 800
+    color: $info-color
+    margin-right: 10px
+    margin-left: 10px
+    &_positive
+      color: #3DC47E
+    &_negative
+      color: #FF4F52
+  &__comments
+    margin-right: 15px
+  &__button
+    margin-bottom: 59px
+  &-form
+    display: flex
+    padding: 30px 40px 35px 30px
+    background-color: #F5F5F5
+    &__avatar
+      width: 75px
+      height: 75px
+      margin-top: 40px
+      margin-right: 10px
+    &__wrapper
+      margin-left: 11px
+      flex-grow: 1
+      display: flex
+      flex-direction: column
+    &__title
+      margin-top: 0
+      margin-bottom: 15px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $title-color
+    &__textarea
+      position: absolute
+      top: 0
+      height: calc( 100% - 15px )
+      width: 100%
+      border: none
+      border-radius: 5px
+      resize: none
+      padding: 15px 15px 0 15px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $info-color
+    &__message
+      position: relative
+      width: 100%
+      min-height: 130px
+      border: $line
+      background-color: $light
+      padding-bottom: 15px
+      margin-bottom: 15px
+      border-radius: 5px
+      &::before
+        content: ''
+        position: absolute
+        right: calc( 100% + 1px)
+        top: 25px
+        width: 0
+        height: 0
+        border: 11px solid transparent
+        border-right-color: #D9DADB
+      &::after
+        content: ''
+        position: absolute
+        right: 100%
+        top: 25px
+        width: 0
+        height: 0
+        border: 11px solid transparent
+        border-right-color: $light
+
+    &__icon
+      margin-left: 10px
+    &__button
+      display: flex
+      align-items: center
+      width: max-content
+      margin-left: 2px
+      cursor: pointer
+
+.comments
+  &__link
+    font-weight: normal
+    color: $title-color
+.rating
+  display: flex
+  align-items: center
+  &__icon
+    &_rotate
+      transform: rotate(180deg)
+      margin-bottom: -2px
+.answer
+  padding-left: 90px
+.load
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 15px 0
+  width: 100%
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  color: $title-color
+  background-color: $light
+  border: $line
+  border-radius: 25px
+  cursor: pointer
+  &__icon
+    margin-right: 7px
+    margin-left: 25px

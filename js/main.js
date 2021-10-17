@@ -63,6 +63,10 @@ $(document).ready(function () {
         phone: {
           required: true,
           minlength: 18
+        },
+        message_required: {
+          required: true,
+          minlength: 100
         }
       },
       messages: {
@@ -76,6 +80,10 @@ $(document).ready(function () {
         email: {
           required: "Пожалуйста, укажите свой email",
           email: "Введите в формате name@domain.com"
+        },
+        message_required: {
+          required: "Пожалуйста, введите сообщение",
+          minlength:"Минимальная длинна 100 символов"
         }
       }
     });
@@ -131,6 +139,16 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
 
+  });
+
+  var loadButton = $('.comment__button');
+  var loadItem = $('[data-toggle=loading]');
+  var lastVisibleItem = $('.comment__item_toggle');
+
+  loadButton.on('click', function(){
+    loadItem.removeClass('comment__item_hidden');
+    lastVisibleItem.toggleClass('comment__item_last');
+    
   });
 
 });
