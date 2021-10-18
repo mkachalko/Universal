@@ -215,15 +215,22 @@
     &__bookmark
       top: 82px
   .article
+    padding: 40px 0
     &__block
       grid-template-columns: 1fr
     &__author
       grid-row: 1
       margin-left: auto
+      margin-right: auto
+      margin-top: 0
       margin-bottom: 30px
+      width: 320px
+      &-block
+        width: 100%
     &__material
       margin-top: 0
     &__text
+      max-width: 100%
       &_small
         max-width: 264px
     &-slider
@@ -241,14 +248,18 @@
       display: flex
       flex-wrap: wrap
   .other
+    padding-bottom: 60px
     &-wrapper
       flex-wrap: wrap
     &__item
       display: flex
-      flex-wrap: wrap
+      flex-direction: column
       width: 48%
       &:nth-child(-n+2)
         margin-bottom: 30px
+    &__title
+      &-link
+        flex-grow: 1
     &__image
       height: 210px
   .load
@@ -258,6 +269,8 @@
 
   .container
     width: 87%
+    &_secondary
+      width: 100%
 
   .recommend
     &-wrapper
@@ -274,6 +287,7 @@
         text-align: center
         &:last-child
           min-height: 20px
+          padding: 14px 14px
       &__category
         margin-bottom: 0
     &__description
@@ -365,9 +379,7 @@
         height: 55px
 
 @media ( max-width: 575.98px )
-  .container
-    &_secondary
-      width: 100%
+
   .header
     padding-top: 21px
     padding-bottom: 21px
@@ -549,8 +561,7 @@
     min-width: 138px
   .article
     &__author
-      margin-top: 0
-      margin-right: auto
+      width: 280px
     &__avatar
       width: 70px
       height: 70px
@@ -639,11 +650,14 @@
       font-size: 15px
       line-height: 20px
   .other
+    padding-bottom: 50px
     &__item
       width: 100%
       &:nth-child(3)
         margin-bottom: 30px
     &__title
+      width: 100%
+    &__info
       width: 100%
   .comment
     &__text
@@ -665,6 +679,8 @@
         font-size: 13px
       &__item
         padding: 10px 5px
+        &:last-child
+          padding: 10px 5px
       &__category
         font-size: 9px
     &-content
@@ -720,6 +736,9 @@
           max-width: 155px
   .footer
     padding-top: 30px
+  .article
+    &__author
+      width: 230px
   .comment
     &-form
       padding: 30px 15px 25px 15px
@@ -731,12 +750,66 @@
   .answer
     padding-left: 50px
 
-@media (max-width: 991.98px) and (orientation: landscape)
+@media ( min-width: 992px )
+  .button
+    &:hover
+      background-color: #17b01c
+  .request
+    &__button
+      &:hover
+        background-color: #17b01c
+  .nav-menu__link, .footer__link
+    &:hover
+      border-bottom: 2px solid #656B70
+
+  .useful
+    &__title
+      &:hover
+        color: #22b8e5
+  .articles
+    &__item
+      &_small
+        &:hover
+          background-color: #f0d6e0
+  .dream-job
+    &__title
+      &:hover
+        text-decoration: underline
+  .popular__title, .instruments__title, .all-main__title, .all-secondary__article-title, .career-articles__title, .contacts__item
+    &:hover
+      text-decoration: underline
+  .download
+    &:hover
+      padding-right: 15px
+  .tags__item, .article__tag
+    &:hover
+      background-color: $info-color
+      color: $light
+  .social-networks__link, .footer__icon
+    &:hover
+      width: 47px
+      height: 47px
+  .all
+    &-secondary
+      &__link
+        &:hover
+          color: #17b01c
+  .footer__logo, .header__logo
+    &:hover
+      box-shadow: 0 0 10px 5px #9fe7fc
+  .preview__link, .article__author-page, .material__title, .other__title, .comments__link
+    &:hover
+      text-decoration: underline
+  .comment__link, .comment__button
+    &:hover
+      background-color: #9ce8ff
+
+@media (max-height: 576px)
   .modal
     &__dialog
       max-height: 310px
       overflow-y: auto
-@media ( max-width: 767.98px) and (orientation: landscape)
+@media ( max-height: 320px)
   .header
     &_mobile
       &_visible

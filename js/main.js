@@ -11,12 +11,12 @@ $(document).ready(function () {
   })
 
   var menuButton = $('.menu-button');
-  menuButton.on('click', function() {
+  menuButton.on('click', function() {    
     $('.header').toggleClass('header_mobile_visible');
     $('.nav-menu').toggleClass('nav-menu_mobile_visible');
     $('.request').toggleClass('request_mobile_visible');
     $('.nav-menu__list').toggleClass('nav-menu__list_mobile_visible');
-    body.toggleClass('lock'); 
+    // body.toggleClass('lock'); 
    });
 
   var modalButton = $('[data-toggle=modal]');
@@ -29,16 +29,26 @@ $(document).ready(function () {
   closeButton.on('click', closeModal);
 
   function openModal() {
+    const documentWidth = parseInt(document.documentElement.clientWidth);
+    const windowWidth = parseInt(window.innerWidth);
+    const scrollbarWidth = windowWidth - documentWidth;
+    body.append(`<style>body.lock {margin-right: ${scrollbarWidth}px; overflow: hidden;}</style>`);
+    $('.header_mobile_visible').append(`<style>.header_mobile_visible {margin-right: ${scrollbarWidth}px}</style>`);
+    $('.to-top').append(`<style>.to-top {margin-right: ${scrollbarWidth}px}</style>`);
     modalOverlay.addClass('modal__overlay_visible');
     modalDialog.addClass('modal__dialog_visible');
     body.addClass('lock');
+    
+    
   }
   function closeModal(event) {
     
     event.preventDefault()
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
-    body.removeClass('lock');
+    body.removeClass('lock'); 
+    $('.header_mobile_visible').append(`<style>.header_mobile_visible {margin-right: 0}</style>`);
+    $('.to-top').append(`<style>.to-top {margin-right: 0}</style>`);   
     
   }
 
@@ -48,6 +58,8 @@ $(document).ready(function () {
       modalOverlay.removeClass('modal__overlay_visible');
       modalDialog.removeClass('modal__dialog_visible');
       body.removeClass('lock');
+      $('.header_mobile_visible').append(`<style>.header_mobile_visible {margin-right: 0}</style>`);
+      $('.to-top').append(`<style>.to-top {margin-right: 0}</style>`);
     }
   });
 
@@ -148,7 +160,7 @@ $(document).ready(function () {
   loadButton.on('click', function(){
     loadItem.removeClass('comment__item_hidden');
     lastVisibleItem.toggleClass('comment__item_last');
-    
+    loadButton.addClass('load_hidden');
   });
 
 });

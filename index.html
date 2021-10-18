@@ -22,13 +22,13 @@
         </a>
         <nav class="nav-menu nav-menu_mobile_hidden">
           <ul class="nav-menu__list">
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Статьи</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Новости</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Горячее</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">HTML</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">CSS</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">JavaScript</a></li>
-            <li class="nav-menu__item"><a href="#" class="nav-menu__link">Web Design</a></li>
+            <li class="nav-menu__item"><a href="#articles" class="nav-menu__link">Статьи</a></li>
+            <li class="nav-menu__item"><a href="#news" class="nav-menu__link">Новости</a></li>
+            <li class="nav-menu__item"><a href="#hot" class="nav-menu__link">Горячее</a></li>
+            <li class="nav-menu__item"><a href="#footer" class="nav-menu__link">HTML</a></li>
+            <li class="nav-menu__item"><a href="#footer" class="nav-menu__link">CSS</a></li>
+            <li class="nav-menu__item"><a href="#footer" class="nav-menu__link">JavaScript</a></li>
+            <li class="nav-menu__item"><a href="#webDesign" class="nav-menu__link">Web Design</a></li>
           </ul>
         </nav>
         <div class="request header__request request_mobile_hidden"><button data-toggle="modal" class="request__button">Оставить заявку</button></div>
@@ -187,7 +187,7 @@
     </div>
   </section>
 
-  <section class="articles">
+  <section class="articles" id="articles">
     <div class="container">
       <div class="articles-wrapper">
 
@@ -213,7 +213,7 @@
 
         <div class="wrapper popular articles__item">
           <span class="category category_secondary">Популярное</span>
-          <span class="category category_purple popular__category">Web design</span>
+          <span class="category category_purple popular__category" id="webDesign">Web design</span>
           <a href="#"><h2 class="articles__title popular__title">Где взять реальные проекты для портфолио</h2></a>
           <div class="articles__author-block">
             <img src="img/articles/author-image.png" alt="Аватар: Сара Женникова" class="articles__avatar articles__avatar_large">
@@ -322,7 +322,7 @@
           <div class="all-main__item">
             <img src="img/all/main-article-1.png" alt="Иллюстрация к статье" class="all-main__image">
             <div class="all-main__articles">
-              <span class="category category_blue all-main__category">Новости</span>
+              <span class="category category_blue all-main__category" id="news">Новости</span>
               <a href="#"><h2 class="all-main__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h2></a>
               <p class="all-main__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
                 неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
@@ -565,7 +565,7 @@
     </div>
   </section>
 
-  <section class="career">
+  <section class="career" id="hot">
     <div class="container">
       <div class="career-wrapper">
 
@@ -575,7 +575,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide career-slider__slide career-slider__slide_first">
-              <span class="category career__hot category_secondary">Горячее</span>
+              <span class="category career__hot category_secondary" >Горячее</span>
               <div class="career__author">
                 <img src="img/career/avatar.png" alt="Аватар: Оксана Пушкина" class="avatar career__avatar">
                 <span class="career__name">Оксана Пушкина</span>
@@ -661,9 +661,7 @@
         <div class="career-articles career__articles">
           <div class="wrapper career-articles__main">
             <span class="category category_greyblue career__category">Карьера</span>
-            <a href="#">
-              <h2 class="career-articles__title career-articles__title_large">Вопросы на собеседовании для джуна</h2>
-            </a>
+            <h2 class="career-articles__title career-articles__title_large">Вопросы на собеседовании для джуна</h2>
             <p class="career-articles__text career-articles__text_mb45">Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование
             </p>
             <a class="button career-articles__link" href="article.html">Читать далее
@@ -692,7 +690,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
       <form action="send.php" method="POST" class="form footer__form">        
@@ -764,7 +762,7 @@
             <li class="contacts__item"><a href="#" class="contacts__link">Контакты</a></li>
             <li class="contacts__item"><a href="#" class="contacts__link">Работа у нас</a></li>
             <li class="contacts__item"><a href="#" class="contacts__link">Реклама</a></li>
-            <li class="contacts__item"><a href="#" class="contacts__link">Обратная связь</a></li>
+            <li class="contacts__item" data-toggle="modal">Обратная связь</li>
           </ul>
         </div>
         <div class="contacts__social-networks">
@@ -781,6 +779,10 @@
       </div>
     </div>
   </footer>
+
+  <a href="#" class=" button to-top">
+    <img src="img/recommend/recommend-arrow.svg" alt="Наверх" class="to-top__image">
+  </a>
 
   <div class="modal">
     <div data-toggle="close" class="modal__overlay"></div>
