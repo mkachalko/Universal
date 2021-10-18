@@ -162,5 +162,36 @@ $(document).ready(function () {
     lastVisibleItem.toggleClass('comment__item_last');
     loadButton.addClass('load_hidden');
   });
+   
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 150) {
+        $('.to-top').fadeIn();
+    } else {
+        $('.to-top').fadeOut();
+    }
+});
+
+  // Добавить плавную прокрутку до всех ссылок
+  $("a").on('click', function(event) {
+
+    // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+    if (this.hash !== "") {
+      // Запретить поведение щелчка якоря по умолчанию
+      event.preventDefault();
+
+      // Хранить хэш
+      var hash = this.hash;
+
+      // Использование метода animate() jQuery для добавления плавной прокрутки страницы     
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+        window.location.hash = hash;
+      });
+    } // Конец, если
+  });
 
 });

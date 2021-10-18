@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body body_light">
-  <header class="header header_light header_mobile_fixed">
+<body class="body body_light" id="top">
+  <header class="header header_light header_mobile_fixed" >
     <div class="container">
       <div class="header-wrapper">
         <a href="index.html" class="header__logo">
@@ -135,7 +135,7 @@
           </div>
           <div class="wrapper article__author">
             <div class="article__author-block">
-              <img src="img/article/avatar.png" alt="Аватар: Мира Стахова" class="avatar article__avatar">
+              <img src="img/article/avatar.jpg" alt="Аватар: Мира Стахова" class="avatar article__avatar">
               <span class="article__name">Мира Стахова</span>
               <span class="article__position">Фрилансер</span>
               <span class="article__all">82 статьи</span>
@@ -146,9 +146,9 @@
       
       </div>
       
-      <div class="article-slider-wrapper wrapper" id="part-3">
+      <div class="article-slider-wrapper article-slider wrapper" id="part-3">
         <!-- Slider main container -->
-        <div class="swiper article-slider">
+        <div class="swiper article-slider__swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -389,7 +389,7 @@
           </div>
 
           <div class="comment__item answer">
-            <img src="img/article/avatar.png" alt="Аватар: Михаил Степашин" class="avatar comment__avatar">
+            <img src="img/article/avatar.jpg" alt="Аватар: Михаил Степашин" class="avatar comment__avatar">
             <div class="comment__author">
               <span class="comment__name">Мира Стахова</span>
               <span class="comment__date">17 июля, 18:41</span>
@@ -637,7 +637,7 @@
     </div>
   </footer>
 
-  <a href="#" class=" button to-top">
+  <a href="#top" class=" button to-top">
     <img src="img/recommend/recommend-arrow.svg" alt="Наверх" class="to-top__image">
   </a>
 
