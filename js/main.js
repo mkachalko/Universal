@@ -19,6 +19,13 @@ $(document).ready(function () {
     // body.toggleClass('lock'); 
    });
 
+  $('.nav-menu__link').on('click', function(){
+    $('.header').removeClass('header_mobile_visible');
+    $('.nav-menu').removeClass('nav-menu_mobile_visible');
+    $('.request').removeClass('request_mobile_visible');
+    $('.nav-menu__list').removeClass('nav-menu__list_mobile_visible');
+  });
+
   var modalButton = $('[data-toggle=modal]');
   var closeButton = $('[data-toggle=close]');
   var modalOverlay = $('.modal__overlay');
@@ -67,7 +74,11 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid",
       rules: {
-        name: "required",
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 20
+        },
         email: {
           required: true,
           email: true
@@ -83,7 +94,9 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: "Пожалуйста, введите своё имя"
+          required: "Пожалуйста, введите своё имя",
+          minlength:"Минимальное количество символов 2",
+          maxlength:"Максимальное количество символов 20"
         },
         phone: {
           required: "Пожалуйста, укажите номер телефона",
@@ -134,7 +147,7 @@ $(document).ready(function () {
 
   });
 
-  const articleSlider = new Swiper('.article-slider', {
+  const articleSlider = new Swiper('.article-slider__swiper', {
   // Optional parameters
     direction: 'horizontal',
     loop: true,

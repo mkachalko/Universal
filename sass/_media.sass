@@ -664,8 +664,9 @@
       font-size: 12px
       line-height: 20px
     &__avatar
-      width: 55px
-      height: 55px
+      &-image
+        width: 55px
+        height: 55px
     &__name
       font-size: 14px
       line-height: 18px
@@ -794,15 +795,16 @@
       &__link
         &:hover
           color: #17b01c
-  .footer__logo, .header__logo
-    &:hover
-      box-shadow: 0 0 10px 5px #9fe7fc
-  .preview__link, .article__author-page, .material__title, .other__title, .comments__link
+
+  .preview__link, .article__author-page, .material__title, .other__title, .comments__link, .articles__author, .comment__name
     &:hover
       text-decoration: underline
   .comment__link, .comment__button
     &:hover
       background-color: #9ce8ff
+  .comments, .likes, .views, .rating__icon, .comment__avatar
+    &:hover
+      opacity: 0.5
 
 @media (max-height: 576px)
   .modal
