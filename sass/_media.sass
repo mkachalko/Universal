@@ -753,10 +753,12 @@
 
 @media ( min-width: 992px )
   .button
+    transition: background-color 0.3s
     &:hover
       background-color: #17b01c
   .request
     &__button
+      transition: background-color 0.3s
       &:hover
         background-color: #17b01c
   .nav-menu__link, .footer__link
@@ -765,11 +767,13 @@
 
   .useful
     &__title
+      transition: color 0.3s
       &:hover
         color: #22b8e5
   .articles
     &__item
       &_small
+        transition: background-color 0.3s
         &:hover
           background-color: #f0d6e0
   .dream-job
@@ -780,19 +784,22 @@
     &:hover
       text-decoration: underline
   .download
+    transition: padding-right 0.3s
     &:hover
       padding-right: 15px
   .tags__item, .article__tag
+    transition: 0.3s
     &:hover
       background-color: $info-color
       color: $light
   .social-networks__link, .footer__icon
+    transition: 0.3s
     &:hover
-      width: 47px
-      height: 47px
+      transform: scale(1.2)
   .all
     &-secondary
       &__link
+        transition: color 0.3s
         &:hover
           color: #17b01c
 
@@ -800,9 +807,11 @@
     &:hover
       text-decoration: underline
   .comment__link, .comment__button
+    transition: background-color 0.3s
     &:hover
       background-color: #9ce8ff
   .comments, .likes, .views, .rating__icon, .comment__avatar
+    transition: opacity 0.3s
     &:hover
       opacity: 0.5
 
